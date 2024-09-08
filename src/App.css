@@ -1,0 +1,368 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #1a1b1d;
+  /* margin-bottom: 100px; */
+}
+
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Roboto, Oxygen, sans-serif;
+
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* -------   HEADER    ------ */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+header .container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0px 15px 70px 10px black;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+header button {
+  height: 40px;
+  width: 120px;
+  border: 1px solid red;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px black;
+}
+
+hearder button:hover {
+  background-color: white;
+}
+
+header img {
+  width: 200px;
+  margin-right: 200px;
+  cursor: pointer;
+  box-shadow: 10px 5px 50px red;
+}
+
+.search {
+  width: 300px;
+  height: 37px;
+  border: 1px solid red;
+  color: white;
+  background-color: black;
+  padding-left: 40px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* ---------   PAGES CHARACTER/COMICS    ------- */
+
+main div {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-container {
+  /* min-width: 250px; */
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 50px #c0392b;
+}
+
+.comics-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 26px;
+  margin-top: 50px;
+}
+
+.character-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 26px;
+  margin-top: 50px;
+}
+
+.block-container img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.avengers {
+  height: 900px;
+  width: 100%;
+  position: center;
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.iron-man {
+  width: 100%;
+}
+
+.middle-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.col-2 {
+  display: block;
+  /* border: 2px solid violet; */
+  padding: 50px;
+}
+.col-2 h1 {
+  margin-bottom: 45px;
+  font-size: 30px;
+}
+
+.col-2 > img {
+  margin-right: 10px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.col-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-1 img {
+  flex: 2;
+}
+
+.col-2 p {
+  font-family: Roboto, Oxygen, sans-serif;
+  font-size: 15px;
+  margin: 30px 0px 30px 0px;
+  width: 500px;
+  /* border: 2px solid blanchedalmond; */
+}
+
+.aa {
+  display: flex;
+  width: 135px;
+  /* border: 2px solid greenyellow; */
+}
+
+.aa img {
+  width: 40px;
+  height: 70%;
+  margin: 40px 20px 0px 0px;
+}
+.image-cover > div img {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+p {
+  font-size: 14px;
+}
+
+#favorite {
+  border: 2px solid red;
+  position: fixed;
+  width: 260px;
+  height: 100vh;
+  background-color: #1a1b1d;
+  transition: right 1s;
+  overflow-y: scroll;
+  z-index: 999;
+}
+
+.my-favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.open {
+  right: 0px;
+}
+
+.close {
+  right: -260px;
+}
+
+.next {
+  font-size: 50px;
+  color: white;
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+}
+
+.heartBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  color: red;
+  cursor: pointer;
+  margin-top: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  right: 10px;
+}
+
+.img-heart {
+  display: flex;
+  position: relative;
+}
+
+.text-description {
+  height: 150px;
+  overflow: hidden;
+  margin: 16px;
+}
+.text-description2 {
+  height: 70px;
+  overflow: hidden;
+  margin: 16px;
+}
+
+.plugin-container {
+  margin-top: 50px;
+  padding: 0px 20px;
+}
+.close-container {
+  margin-left: 230px;
+  background: none;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.close-btn {
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.empty-fav {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.fav-title {
+  font-size: 17px;
+}
+
+.spider-container {
+  background: radial-gradient(#3498db, #1a1b1d 70%);
+}
+
+.iron-container {
+  background: radial-gradient(#c0392b, #1a1b1d 70%);
+}
+
+.hero-container {
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spider {
+  width: 100%;
+}
+
+/* --------    FOOTER  ----- */
+
+footer {
+  height: 200px;
+  background-image: url("./assets/img/marvel.jpg");
+  font-size: 14px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+footer img {
+  width: 140px;
+}
+footer img:hover {
+  transform: rotate(0.5turn);
+  cursor: help;
+}
+
+.footer {
+  font-family: "TS-Med";
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#spinner {
+  animation: spin 3s linear infinite;
+}
+/* -----   ANIMATION SPINNER    ------ */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
