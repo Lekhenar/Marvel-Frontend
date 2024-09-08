@@ -10,7 +10,9 @@ const Footer = () => {
     const fetchData = async () => {
       try {
         // console.log("Test");
-        const response = await axios.get(`http://localhost:3000/characters`);
+        const response = await axios.get(
+          `https://site--marvel-backend--txmznz4727cw.code.run/characters`
+        );
         // console.log(response.data);
 
         setData(response.data);

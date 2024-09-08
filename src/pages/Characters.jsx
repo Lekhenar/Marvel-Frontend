@@ -35,7 +35,7 @@ const Characters = ({ search, setFav, fav }) => {
       try {
         // console.log("Test");
         const response = await axios.get(
-          `http://localhost:3000/characters?name=${search}&page=${page}`
+          `https://site--marvel-backend--txmznz4727cw.code.run/characters?name=${search}&page=${page}`
         );
         // console.log(response.data);
 
