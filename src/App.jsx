@@ -16,6 +16,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [fav, setFav] = useState([]);
   // console.log(search);
+
   const closeFav = () => {
     document.getElementById("favorite").classList.add("close");
     document.getElementById("favorite").classList.remove("open");

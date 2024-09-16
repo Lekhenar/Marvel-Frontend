@@ -24,15 +24,17 @@ const Header = ({ search, setSearch }) => {
           value={search}
           onChange={searchAndNavigate}
         />
-        <Link to={"./characters"}>
-          <button>Characters</button>
-        </Link>
-        <Link to={"./comics"}>
-          <button>Comics</button>
-        </Link>
-        <Link to={"./favoris"}>
-          <button>Favoris</button>
-        </Link>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <Link to={"./characters"}>
+            <button>Characters</button>
+          </Link>
+          <Link to={"./comics"}>
+            <button>Comics</button>
+          </Link>
+          <Link to={"./favoris"}>
+            <button>Favoris</button>
+          </Link>
+        </div>
       </div>
     </header>
   );
