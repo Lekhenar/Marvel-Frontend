@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import iron from "../assets/img/iron.png";
+import iron from "../assets/img/Iron.png";
 import marvelComic from "../assets/img/header-im.jpg";
 import spider from "../assets/img/spiderman.jpg";
 import spiderman from "../assets/img/spider.png";
-import cover1 from "../assets/img/ironMan_Poster1.webp";
+import cover1 from "../assets/img/IronMan_Poster1.webp";
 import cover2 from "../assets/img/ironMan_2.jpg";
 import cover3 from "../assets/img/ironMan_poster3.jpg";
 import cover4 from "../assets/img/spiderman1.jpg";
